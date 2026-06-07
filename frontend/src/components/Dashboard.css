@@ -1,0 +1,48 @@
+/* 1. The Stage: Soft background makes white cards pop */
+.dashboard-container {
+    padding: 40px;
+    background-color: #f4f7f9; 
+    min-height: 100vh;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* 2. The Layout: Perfect symmetry using Flexbox */
+.card-grid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+/* 3. The Card: This is where the "MUI" look comes from */
+.stat-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px; /* Extra rounded for a modern look */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.03); /* Very soft shadow */
+    flex: 1;
+    min-width: 260px;
+    border: 1px solid #edf2f7; /* Subtle border instead of thick lines */
+    transition: all 0.3s ease; /* Makes the hover smooth */
+}
+
+/* 4. The Hover: Making it feel "alive" */
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.06);
+}
+
+/* 5. Typography: Hierarchy is key */
+.stat-label {
+    color: #718096;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 12px;
+    color: #1a202c;
+}
